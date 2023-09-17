@@ -6,6 +6,7 @@ const scroll = new LocomotiveScroll({
 
 var timeout;
 
+
 function time(){
     var datetime = new Date().toLocaleTimeString();
 

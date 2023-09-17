@@ -5,8 +5,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  font-family: 'General Sans', sans-serif;
-                                                
+    font-family: "General Sans";
+
 }
 
 html, body {
@@ -43,7 +43,6 @@ html, body {
 .navbar h5{
     
     margin: 0;
-    font-weight: 400;
 
     text-decoration: none;
     font-size: 18px;
