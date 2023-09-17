@@ -1,0 +1,313 @@
+@import url('https://fonts.cdnfonts.com/css/general-sans');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "General Sans";
+
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    cursor: none;
+}
+
+.minicircle{
+    /*  cant find a way to do it. The website stops scrolling */ 
+    /* bc cursor hi band kar diya */
+    background-color: white;
+    height: 15px;
+    width: 15px;
+    position: fixed;
+    z-index: 9999;
+    border-radius: 50%;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    mix-blend-mode: difference;
+    opacity: 0.8;
+    pointer-events: none;
+
+
+
+
+}
+
+#main{
+    background-color: black;
+    color: white;
+
+}
+
+.navbar h5{
+    
+    margin: 0;
+
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+.navbar{
+    background-color: black;
+    height: 65px;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+
+    width: 100%;
+
+
+
+
+
+}
+
+.navelem{
+    display: flex;
+    justify-content: center;
+    gap: 5vmin;
+}
+
+.title{
+    height: 100vh;
+    text-transform: uppercase;
+    padding-top: 130px;
+}
+
+
+.title h1{
+    font-size: 10vw;
+    margin: 0 70px;
+    line-height: 0.9;
+    opacity: 0.6;
+
+
+
+}
+
+.title #second-h1{
+    margin-left: 200px;
+    margin-right: 0;
+
+}
+
+.blocktext{
+    width: fit-content;
+
+    display: flex;
+    flex-flow: column;
+    align-items: end;
+}
+
+.blocktext p{
+    margin-top: 4px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.bounding{
+    width: fit-content;
+    overflow: hidden;
+}
+
+.bounding .boundingelem{
+    transform: translateY(100%);
+}
+
+
+
+
+
+
+.kaatilogue{
+    margin-top: 50px;
+    width: 100vw;
+
+
+    text-align: right;
+    font-size: 1.2rem;
+
+
+
+}
+
+
+.kaatilogue h5{
+    position: relative;
+    z-index: 100;
+    mix-blend-mode: difference;
+
+
+
+
+    margin-right: 30px;
+
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: none;
+  }
+
+  @keyframes strike{
+    0%   { width : 0; }
+    100% { width: 100%; }
+  }
+  .strike {
+    position: relative;
+    
+  }
+  .strike::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    
+    opacity: 0;
+  }
+
+  .strike:hover::after{
+    opacity: 0.8;
+    animation-name: strike;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode:both; 
+    animation-delay: 0.2s;
+  }
+
+  .titlefooter{
+    padding: 0 50px;
+    
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  .titlefooter h5{
+    font-size: 17px;
+  }
+
+.info{
+
+    display: flex;
+    padding: 40px 20vw;
+    align-items: center;
+    gap: 25px;
+    font-size: 18px;
+    flex-wrap: nowrap;
+}
+
+.info h5{
+    opacity: 0.5;
+    margin-bottom: 1.5vmin;
+}
+
+.info p{
+    font-size: 17px;
+    font-weight: 550;
+}
+
+
+.info img{
+
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+
+}
+
+.showcase {
+    width: 90%;
+    padding: 100px 30px;
+}
+
+.showcase .elem{
+    border-top: #ffffff9f solid 1px;
+    border-bottom: #ffffff9f solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    position: relative;
+
+}
+
+.showcase h1{
+    padding-left: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    font-size: 120px;
+    font-weight: 500;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.showcase img{
+    pointer-events: none;
+    opacity: 0;
+    z-index: 999;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 56vmin;
+
+    height: 135%;
+    transform: translate(-50%,-50%);
+}
+
+.footer{
+    padding-top: 150px ;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer h5{
+    text-transform: uppercase;
+    font-size: 17px;
+    opacity: 0.5;
+}
+
+.footer p{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+span{
+    padding-left: 5px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 100px;
+    padding-bottom: 20px;
+
+}
+
+
+
+.time{
+    display: flex;
+    gap: 10px;
+}
+
+.social .media{
+    display: flex;
+    gap: 50px;
+}
+
