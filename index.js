@@ -6,9 +6,15 @@ const scroll = new LocomotiveScroll({
 
 var timeout;
 
-var datetime = new Date().toLocaleTimeString();
-;
-document.getElementById("time").textContent = datetime; 
+function time(){
+    var datetime = new Date().toLocaleTimeString();
+
+    document.getElementById("time").textContent = datetime; 
+    setInterval(time, 1000);
+
+}
+
+time();
 
 let crsr = document.querySelector(".minicircle")
 
